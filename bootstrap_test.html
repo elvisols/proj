@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320"><!-- WHEN content="0" THIS MEANS THAT IT WAS OPTIMIZED FOR ANY WIDTH THE SCREEN IS -->
+    <meta name="viewport" content="width=device-width">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function testFeatures() {
+            // Test for JavaScript Features
+            document.querySelector("#geoloc").innerHTML = Modernizr.geolocation ? "supported" : "not supported";
+            document.querySelector("#touch").innerHTML = Modernizr.touch ? "supported" : "not supported";
+            // Test for HTML5 Features
+            document.querySelector("#svg").innerHTML = Modernizr.svg ? "supported" : "not supported";
+            document.querySelector("#canvas").innerHTML = Modernizr.canvas ? "supported" : "not supported";
+        }
+
+        window.onload = testFeatures;
+    </script>
+    <style type="text/css">
+        .animtest, .noanimtest 
+        {
+            display: none;
+        }
+        .cssanimations .animtest {
+            display:block;
+        }
+        .no-cssanimations .noanimtest 
+        {
+            display:block;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Javascript Features</h1>
+    <P>Geolocation: <span id="geoloc"></span>
+    <P>Touch event: <span id="touch"></span>
+    <h1>HTML5 Features</h1>
+     <P>SVG: <span id="svg"></span>
+     <P>CANVAS: <span id="canvas"></span>
+    <h1>CSS Features</h1>
+     <P class='animtest'><font color='green'>CSS animation Supported!</font></P>
+     <P class='noanimtest'><font color='red'>CSS animation Not Supported!</font></P>
+    <div>
+    	<img src="img/happy.jpg" />	
+    </div>
+    <!--
+    <strong>
+    	<p class="muted">Muted</p>
+		<p class="text-warning">Warning</p>
+		<p class="text-error">Error</p>
+		<p class="text-info">Info</p>
+		<p class="text-success">Success</p>
+		</strong>
+		<i class="icon-search"></i>
+    <script src="js/jquery.js"></script>
+    <!--
+    	<script src="js/bootstrap.min.js"></script>
+    	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+    -->
+  </body>
+</html>
